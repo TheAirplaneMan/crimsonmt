@@ -23,3 +23,13 @@ minetest.register_node("crimsonmt:flesh", {
 	groups = {snappy = 1, choppy = 2},
 	sounds = default.node_sound_stone_defaults(),
 })
+
+minetest.register_node("crimsonmt:bone_block", {
+	description = ("Bone Block"),
+	tiles = {"crimsonmt_bone_top.png", "crimsonmt_bone_top.png", "crimsonmt_bone_side.png"},
+	groups = {cracky = 2},
+	paramtype2 = "facedir",
+	sounds = default.node_sound_stone_defaults(),
+
+	on_place = minetest.rotate_node
+})

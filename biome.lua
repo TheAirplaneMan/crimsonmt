@@ -40,3 +40,24 @@
 		heat_point = 53,
 		humidity_point = 52,
 	})
+
+	minetest.register_decoration({
+		name = "crimsonmt:ribes",
+		deco_type = "schematic",
+		place_on = {"crimsonmt:dirt_with_crimsongrass"},
+		sidelen = 16,
+		noise_params = {
+			offset = 0,
+			scale = 0.002,
+			spread = {x = 50, y = 50, z = 50},
+			seed = 3,
+			octaves = 3,
+			persist = 0.25
+		},
+		biomes = {"crimson"},
+		y_max = 31000,
+		y_min = 1,
+		schematic = minetest.get_modpath("crimsonmt") .. "/schematics/ribs.mts",
+		flags = "place_center_x, place_center_z",
+		rotation = "random",
+	})
