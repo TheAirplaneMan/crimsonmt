@@ -20,6 +20,13 @@ minetest.register_node("crimsonmt:bloodwood_wood", {
 	sounds = default.node_sound_wood_defaults(),
 })
 
+minetest.register_craft({
+	output = "crimsonmt:bloodwood_wood 4",
+	recipe = {
+		{"crimsonmt:bloodwood_tree"},
+	}
+})
+
 minetest.register_node("crimsonmt:bloodwood_leaves", {
 	description = ("Bloodwood Tree Leaves"),
 	drawtype = "allfaces_optional",

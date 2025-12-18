@@ -9,6 +9,8 @@ dofile(modpath.."/nodes.lua")
 dofile(modpath.."/biome.lua")
 dofile(modpath.."/mobs.lua")
 dofile(modpath.."/items.lua")
+dofile(modpath.."/recipes.lua")
+
 
 local CHECK_RADIUS = 6
 local FADE_SPEED = 0.4
