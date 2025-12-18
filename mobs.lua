@@ -67,9 +67,9 @@ mobs:register_mob("crimsonmt:bloodslime", {
 	jump_height = 7,
 	armor = 100,
 	view_range = 16,
---	drops = {
---		{name = "mesecons_materials:glue", chance = 4, min = 1, max = 2},
---	},
+	drops = {
+		{name = "terralibmt:gel_clump", chance = 1, min = 2, max = 3},
+	},
 	water_damage = 0,
 	lava_damage = 2,
 	light_damage = 0
