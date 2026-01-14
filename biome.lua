@@ -42,7 +42,7 @@
 	})
 
 	minetest.register_decoration({
-		name = "crimsonmt:ribes",
+		name = "crimsonmt:ribs",
 		deco_type = "schematic",
 		place_on = {"crimsonmt:dirt_with_crimsongrass"},
 		sidelen = 16,
@@ -61,3 +61,18 @@
 		flags = "place_center_x, place_center_z",
 		rotation = "random",
 	})
+
+minetest.register_decoration({
+	deco_type = "schematic",
+	place_on = "crimsonmt:dirt_with_crimsongrass",
+	sidelen = 16,
+	fill_ratio = 0.00028,
+	biomes = {"crimson"},
+	height = 0,
+	y_min = 0,
+	y_max = 1000,
+	place_offset_y = math.random(-70,-1),
+	schematic = minetest.get_modpath("terralibmt") .. "/schematics/chasm.mts",
+	flags = "place_center_x, place_center_z, force_placement",
+	rotation = "random",	
+})

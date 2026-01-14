@@ -18,3 +18,8 @@ minetest.register_craftitem("crimsonmt:eye_berries", {
 		return "crimsonmt:eye_berries "..count-1
 	end,
 })
+
+minetest.register_craftitem("crimsonmt:crimson_bones", {
+	description = "Crimson Bones",
+	inventory_image = "crimsonmt_crimson_bones.png"
+})

@@ -1,7 +1,13 @@
 -- Load files
 local modpath = minetest.get_modpath("crimsonmt")
 
+dofile(modpath.."/crimson_intestoid.lua")
+dofile(modpath.."/crimson_steel.lua")
+dofile(modpath.."/plants.lua")
+dofile(modpath.."/stab.lua")
 dofile(modpath.."/crimheart.lua")
+dofile(modpath.."/cleaver.lua")
+dofile(modpath.."/crimson_spine.lua")
 dofile(modpath.."/teethman.lua")
 dofile(modpath.."/bloodwood.lua")
 dofile(modpath.."/ores.lua")

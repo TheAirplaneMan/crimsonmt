@@ -25,9 +25,9 @@ mobs:register_mob("crimsonmt:crimson_flyer", {
 	run_velocity = 5,
 	view_range = 28,
 	jump = false,
---	drops = {
---		{name = "default:lava_source", chance = 3, min = 0, max = 2}
---	},
+	drops = {
+		{name = "crimsonmt:crimson_bones", chance = 1, min = 0, max = 1}
+	},
 	lava_damage = 2,
 })
 
@@ -36,8 +36,8 @@ mobs:register_mob("crimsonmt:crimson_flyer", {
 mobs:spawn({
 	name = "crimsonmt:crimson_flyer",
 	nodes = {"crimsonmt:dirt_with_crimgrass", "crimsonmt:crimstone"},
-	active_object_count = 4,
-        chance = 3000
+	active_object_count = 2,
+        chance = 6000
 })
 
 -- spawn egg
@@ -66,7 +66,7 @@ mobs:register_mob("crimsonmt:bloodslime", {
 	jump_chance = 30,
 	jump_height = 7,
 	armor = 100,
-	view_range = 16,
+	view_range = 15,
 	drops = {
 		{name = "terralibmt:gel_clump", chance = 1, min = 2, max = 3},
 	},
@@ -78,8 +78,8 @@ mobs:register_mob("crimsonmt:bloodslime", {
 mobs:spawn({
 	name = "crimsonmt:bloodslime",
 	nodes = {"crimsonmt:dirt_with_crimgrass", "crimsonmt:crimstone"},
-	active_object_count = 4,
-        chance = 3000
+	active_object_count = 1,
+        chance = 6000
 })
 
 -- spawn egg

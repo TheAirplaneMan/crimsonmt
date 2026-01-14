@@ -13,17 +13,15 @@ mobs:register_mob("crimsonmt:teethman", {
 	mesh = "mobs_stone_monster.b3d",
 	textures = {{"teethman_texture.png"}},
 	makes_footstep_sound = true,
---	sounds = {random = "mobs_stonemonster"},
+	sounds = {random = "terralibmt_gross_random"},
 	walk_velocity = 1,
 	run_velocity = 4,
 	jump_height = 0,
 	stepheight = 1.1,
 	floats = 0,
-	view_range = 10,
+	view_range = 18,
 	drops = {
-		{name = "default:cobble", chance = 1, min = 0, max = 2},
-		{name = "default:coal_lump", chance = 3, min = 0, max = 2},
-		{name = "default:iron_lump", chance = 5, min = 0, max = 2}
+		{name = "crimsonmt:crimson_bones", chance = 1, min = 0, max = 1}
 	},
 	water_damage = 0,
 	lava_damage = 2,
@@ -40,8 +38,8 @@ mobs:register_mob("crimsonmt:teethman", {
 mobs:spawn({
 	name = "crimsonmt:teethman",
 	nodes = {"crimsonmt:dirt_with_crimgrass", "crimsonmt:crimstone"},
-	active_object_count = 4,
-        chance = 3000
+	active_object_count = 2,
+        chance = 6000
 })
 
 -- spawn egg
